@@ -89,6 +89,7 @@ button.active {
 @media (max-width: 767px) {
   .background-video {
     position: static;
+    width: 100%; /* Set width to full for mobile */
     height: 40vh; /* Adjust the height for mobile view */
   }
 
