@@ -1,0 +1,90 @@
+/* CSS styles here we go... */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-video video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.button-container {
+  position: absolute;
+  top: 50%;
+  left: 25%; /* Buttons positioned 25% from the left side */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Style for the watermark */
+.watermark {
+  position: absolute;
+  bottom: 10px; /* Adjust bottom position to move it up from the bottom */
+  left: 10px; /* Adjust left position to move it to the left */
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 3px 8px; /* Adjust padding to make it smaller */
+  color: white;
+  font-size: 10px; /* Adjust font-size to make it smaller */
+  border-radius: 3px; /* Adjust border-radius to make it less rounded */
+  text-align: left; /* Align the text to the left */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+button {
+  padding: 15px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.4); /* Transparent black background */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.button1 {
+  background-color: rgba(245, 80, 80, 0.7); /* Slightly transparent red */
+}
+
+.button2 {
+  background-color: rgba(60, 184, 120, 0.7); /* Slightly transparent green */
+}
+
+.button3 {
+  background-color: rgba(100, 181, 246, 0.7); /* Slightly transparent blue */
+}
+
+.button4 {
+  background-color: rgba(255, 171, 64, 0.7); /* Slightly transparent orange */
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker overlay on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Adjust box shadow on hover */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust text shadow on hover */
+  transform: scale(1.05); /* Slight scaling on hover */
+}
+
+button.active {
+  transform: scale(0.95); /* Slight scaling when active (clicked) */
+}
