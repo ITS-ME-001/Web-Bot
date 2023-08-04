@@ -60,6 +60,16 @@ html, body {
   align-items: center;
 }
 
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .button-container {
+    left: 50%; /* Move the buttons to the horizontal center */
+    transform: translateX(-50%) translateY(-50%); /* Center the buttons horizontally and vertically */
+  }
+}
+
+
 /* Style for the watermark */
 .watermark {
   position: absolute;
