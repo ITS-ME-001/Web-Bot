@@ -20,6 +20,36 @@ html, body {
   height: 100%;
 }
 
+
+/* Styles for image background on mobile view */
+.background-image {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("Assets/mobiground.jpeg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+
+/* Media query for mobile view */
+@media (max-width: 767px) {
+  /* Hide the video background for mobile view */
+  .background-video {
+    display: none;
+  }
+
+  /* Show the image background for mobile view */
+  .background-image {
+    display: block;
+  }
+}
+
+
 .button-container {
   position: absolute;
   top: 50%;
@@ -34,15 +64,17 @@ html, body {
 .watermark {
   position: absolute;
   bottom: 10px;
-  left: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 3px 8px;
+  left: 50%; /* Move the watermark to the horizontal center */
+  transform: translateX(-50%); /* Center the watermark horizontally */
+  background-color: rgba(0, 0, 0, 0.5); /* Increase alpha value to make it more transparent */
+  padding: 2px 6px; /* Decrease padding to make it smaller */
   color: white;
-  font-size: 10px;
+  font-size: 8px; /* Decrease font-size to make it smaller */
   border-radius: 3px;
   text-align: left;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
+
 
 button {
   padding: 15px 25px;
@@ -83,22 +115,4 @@ button:hover {
 
 button.active {
   transform: scale(0.95);
-}
-
-/* Mobile view styles */
-@media (max-width: 767px) {
-  .background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-
-  .background-video video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
 }
