@@ -88,20 +88,17 @@ button.active {
 /* Mobile view styles */
 @media (max-width: 767px) {
   .background-video {
-    position: static;
-    width: 100%; /* Set width to full for mobile */
-    height: 40vh; /* Adjust the height for mobile view */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
   }
 
   .background-video video {
-    height: 100%; /* Full width, 40% of the viewport height */
-  }
-
-  .button-container {
-    position: static;
-    top: auto;
-    left: auto;
-    transform: none;
-    margin-top: 10px; /* Add some spacing between the video and buttons */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 }
