@@ -1,5 +1,3 @@
 ## Copyright and Attribution
 
-Copyright © 2023 [Your Name or Organization]. All rights reserved.
-
-This project is made with ❤️ by Github - Kai0071.
+Copyright © 2023 || <a href="https://github.com/Kai0071">Kai</a> || All rights reserved.
