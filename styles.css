@@ -20,20 +20,22 @@ html, body {
   height: 100%;
 }
 
-
-/* Styles for image background on mobile view */
+/* 
+Styles for image background on mobile view */
 .background-image {
   display: none;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-image: url("Assets/mobiground.jpeg");
+  height: 100%;  /* We can use image link or locally from Assets for background */
+  background-image: url("https://w0.peakpx.com/wallpaper/892/708/HD-wallpaper-japan-night-street-almoe-anime-japan-street-town.jpg");
   background-size: cover;
   background-position: center;
   z-index: -1;
 }
+
+
 
 
 /* Media query for mobile view */
