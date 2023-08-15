@@ -55,7 +55,7 @@ Styles for image background on mobile view */
 .button-container {
   position: absolute;
   top: 50%;
-  left: 15%;
+  left: 12%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
