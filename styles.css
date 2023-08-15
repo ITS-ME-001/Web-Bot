@@ -79,6 +79,7 @@ Styles for image background on mobile view */
   left: 50%; /* Move the watermark to the horizontal center */
   transform: translateX(-50%); /* Center the watermark horizontally */
   background-color: rgba(0, 0, 0, 0.5); /* Increase alpha value to make it more transparent */
+  box-shadow: 0 0 10px rgba(149, 245, 80, 0.7); /* Added glowing box-shadow */
   padding: 2px 6px; /* Decrease padding to make it smaller */
   color: white;
   font-size: 8px; /* Decrease font-size to make it smaller */
@@ -87,12 +88,17 @@ Styles for image background on mobile view */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+.watermark:hover {
+  box-shadow: 0 0 20px rgba(245, 80, 80, 0.9); /* Increase glow on hover */
+}
+
+
 button {
   padding: 15px 25px;
   font-size: 16px;
-  font-family: 'Your Desired Font', sans-serif;
+  font-family: 'Desired Font', Monaco;
   border: none;
-  border-radius: 30px;
+  border-radius: 29px;
   color: #fff;
   cursor: pointer;
   margin: 10px;
