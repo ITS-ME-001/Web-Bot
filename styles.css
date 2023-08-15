@@ -103,6 +103,15 @@ button {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+button:hover,
+button:focus {
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+  backdrop-filter: none; /* Remove blur effect on hover or focus */
+}
+
 .button1 {
   background-color: rgba(245, 80, 80, 0.7);
 }
@@ -117,14 +126,6 @@ button {
 
 .button4 {
   background-color: rgba(255, 171, 64, 0.7);
-}
-
-button:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  transform: scale(1.05);
-  backdrop-filter: none; /* Remove blur effect on hover */
 }
 
 button.active {
